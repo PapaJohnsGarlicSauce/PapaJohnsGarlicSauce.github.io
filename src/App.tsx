@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import TopNav from './components/TopNav';
 import logo from './logo.svg';
 
@@ -12,6 +13,7 @@ function App() {
           Under construction
         </p>
       </header>
+      <Footer />
     </div>
   );
 }
