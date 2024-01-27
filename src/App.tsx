@@ -1,18 +1,45 @@
-import './App.css';
-import Footer from './components/Footer';
-import TopNav from './components/TopNav';
-import logo from './logo.svg';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import TopNav from "./components/TopNav";
 
 function App() {
+  // TODO: Remove this flag when the app is ready
+  const isAppUnderConstruction = true;
+  const underConstructionMessage = <p>Under construction</p>;
+
   return (
     <div className="App">
       <TopNav />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Under construction
-        </p>
-      </header>
+      <div className="main-section">
+        <header className="App-header">
+          <Routes>
+            <Route path="/" element={!isAppUnderConstruction && <Home />} />
+            <Route
+              path="/about"
+              element={!isAppUnderConstruction && <About />}
+            />
+            <Route
+              path="/projects"
+              element={!isAppUnderConstruction && <Projects />}
+            />
+            <Route
+              path="/resume"
+              element={!isAppUnderConstruction && <Resume />}
+            />
+            <Route
+              path="/contact"
+              element={!isAppUnderConstruction && <Contact />}
+            />
+          </Routes>
+          {isAppUnderConstruction && underConstructionMessage}
+        </header>
+      </div>
       <Footer />
     </div>
   );
