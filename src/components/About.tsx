@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 
 const About = (): ReactElement => {
-  // Add about content
+  // Add aboutcontent
   return <div>About</div>;
 };
 

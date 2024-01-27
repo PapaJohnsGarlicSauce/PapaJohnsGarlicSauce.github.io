@@ -1,3 +1,4 @@
+// TODO: Set up absolute imports if I have time
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
