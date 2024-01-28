@@ -15,31 +15,26 @@ function App() {
   const underConstructionMessage = <p>Under construction</p>;
 
   return (
-    <div className="App">
+    <div className="app">
       <TopNav />
       <div className="main-section">
-        <header className="App-header">
-          <Routes>
-            <Route path="/" element={!isAppUnderConstruction && <Home />} />
-            <Route
-              path="/about"
-              element={!isAppUnderConstruction && <About />}
-            />
-            <Route
-              path="/projects"
-              element={!isAppUnderConstruction && <Projects />}
-            />
-            <Route
-              path="/resume"
-              element={!isAppUnderConstruction && <Resume />}
-            />
-            <Route
-              path="/contact"
-              element={!isAppUnderConstruction && <Contact />}
-            />
-          </Routes>
-          {isAppUnderConstruction && underConstructionMessage}
-        </header>
+        <Routes>
+          <Route path="/" element={!isAppUnderConstruction && <Home />} />
+          <Route path="/about" element={!isAppUnderConstruction && <About />} />
+          <Route
+            path="/projects"
+            element={!isAppUnderConstruction && <Projects />}
+          />
+          <Route
+            path="/resume"
+            element={!isAppUnderConstruction && <Resume />}
+          />
+          <Route
+            path="/contact"
+            element={!isAppUnderConstruction && <Contact />}
+          />
+        </Routes>
+        {isAppUnderConstruction && underConstructionMessage}
       </div>
       <Footer />
     </div>
