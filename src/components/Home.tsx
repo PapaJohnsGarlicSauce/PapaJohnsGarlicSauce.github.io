@@ -8,7 +8,7 @@ const Home = (): ReactElement => {
         <h1 className="main-title">Hi!</h1>
         <h2 className="main-subtitle">
           My name is Victoria Lang and I'm a senior software engineer and all
-          that shit fuck you
+          that shit
         </h2>
         <span>
           I like to do things. Lorem ipsum hell yeah brother! I also hate doing
