@@ -2,7 +2,6 @@ import { ReactElement } from "react";
 import me from "../mesmaller.png";
 
 const Home = (): ReactElement => {
-  // Add home content
   return (
     <>
       <div>
@@ -11,6 +10,11 @@ const Home = (): ReactElement => {
           My name is Victoria Lang and I'm a senior software engineer and all
           that shit fuck you
         </h2>
+        <span>
+          I like to do things. Lorem ipsum hell yeah brother! I also hate doing
+          things too. It's a tenuous balance Lorem ipsum hell yeah brother.
+          Lorem ipsum hell yeah brother Lorem ipsum hell yeah brother.
+        </span>
       </div>
       <img
         src={me}

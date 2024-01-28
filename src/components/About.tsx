@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 const About = (): ReactElement => {
   // Add aboutcontent
-  return <div>About</div>;
+  return <>I'm very cool</>;
 };
 
 export default About;

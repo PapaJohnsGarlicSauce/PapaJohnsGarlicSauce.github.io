@@ -12,7 +12,7 @@ import TopNav from "./components/TopNav";
 function App() {
   // TODO: Remove this flag when the app is ready
   const isAppUnderConstruction = true;
-  const underConstructionMessage = <p>Under construction</p>;
+  const underConstructionMessage = <p>Coming Soon</p>;
 
   return (
     <div className="app">
@@ -22,29 +22,16 @@ function App() {
           <TopNav />
           <div className="main-section">
             <Routes>
-              <Route path="/" element={!isAppUnderConstruction && <Home />} />
-              <Route
-                path="/about"
-                element={!isAppUnderConstruction && <About />}
-              />
-              <Route
-                path="/projects"
-                element={!isAppUnderConstruction && <Projects />}
-              />
-              <Route
-                path="/resume"
-                element={!isAppUnderConstruction && <Resume />}
-              />
-              <Route
-                path="/contact"
-                element={!isAppUnderConstruction && <Contact />}
-              />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
-            {isAppUnderConstruction && underConstructionMessage}
           </div>
-          <Footer />
         </>
       )}
+      <Footer />
     </div>
   );
 }
