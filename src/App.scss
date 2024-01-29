@@ -55,3 +55,27 @@ a {
   flex-direction: column;
   font-size: 1.18rem;
 }
+
+footer {
+  margin-top: auto;
+
+  a {
+    color: $main-light;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 0;
+    margin: 8px;
+    color: $footer-text-light;
+  }
+
+  svg, svg > * {
+    height: 30px;
+    width: 30px;
+    color: green !important;
+    fill: green !important;
+    fill-opacity: 0.5;
+    stroke: green !important;
+  }
+}

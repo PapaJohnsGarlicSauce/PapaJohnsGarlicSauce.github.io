@@ -2,8 +2,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import About from "./components/About";
-import Attrs from "./components/Attrs";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
@@ -27,9 +27,9 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/attrs" element={<Attrs />} />
             </Routes>
           </div>
+          <Footer />
         </>
       )}
     </div>
