@@ -33,6 +33,23 @@ a {
     font-size: 1.5rem;
     font-weight: 200;
   }
+a {
+  position: relative;
+  text-decoration: none;
+
+  &.active {
+    text-decoration: underline;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 10px;
+    bottom: 0;
+    transition: width 0.5s ease-in-out !important;
+  }
+}
 }
 
 .main-section {

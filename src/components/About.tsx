@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
 
 const About = (): ReactElement => {
-  // Add aboutcontent
   return (
     <div className="about-content">
       <h2>About</h2>
@@ -19,10 +18,6 @@ const About = (): ReactElement => {
         experiementing with new technologies and languages.
       </p>
       <p>
-        나도 한국에 살았고 대학에서 한국어를 공부했는데 한국어 아직 부족해요
-        ㅠㅠ
-      </p>
-      <p>
         In my free time, I enjoy playing video games, drinking water from a very
         large cup, working out, and going to drag shows. I have a mild obsession
         with maps and geography. I also love cooking and Bea Arthur.
@@ -34,6 +29,10 @@ const About = (): ReactElement => {
           LinkedIn
         </a>
         .
+      </p>
+      <p>
+        나도 한국에 살았고 대학에서 한국어를 공부했는데 한국어 아직 부족해요
+        ㅠㅠ
       </p>
     </div>
   );

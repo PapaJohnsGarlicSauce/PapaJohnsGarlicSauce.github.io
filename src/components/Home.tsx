@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import me from "../mesmaller.png";
+import me from "../meoutline.png";
 
 const Home = (): ReactElement => {
   return (

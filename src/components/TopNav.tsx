@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const pages = [
   { name: "Home", path: "/" },
@@ -21,14 +21,14 @@ const TopNav = (): React.ReactElement => {
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link to={page.path} key={page.name}>
+              <NavLink to={page.path} key={page.name}>
                 <Button
                   key={page.name}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
                   {page.name}
                 </Button>
-              </Link>
+              </NavLink>
             ))}
           </Box>
         </Toolbar>

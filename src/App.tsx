@@ -11,7 +11,7 @@ import TopNav from "./components/TopNav";
 
 function App() {
   // TODO: Remove this flag when the app is ready
-  const isAppUnderConstruction = false;
+  const isAppUnderConstruction = true;
   const underConstructionMessage = <p>Coming Soon</p>;
 
   return (
