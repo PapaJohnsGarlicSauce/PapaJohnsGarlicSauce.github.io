@@ -74,6 +74,20 @@ a {
   font-size: 1.18rem;
 }
 
+.card-link {
+  div {
+    min-height: 100px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  }
+
+  &:hover>div {
+    border: 2px solid $main-highlight;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}
 footer {
   margin-top: auto;
 
