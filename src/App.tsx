@@ -27,6 +27,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
+              {/* TODO: Specify error route if I care enough */}
             </Routes>
           </div>
           <Footer />

@@ -18,7 +18,7 @@ h2 {
 }
 
 a {
-  color: $main-highlight;
+  color: $main-light;
 }
 
 .top-nav {
@@ -36,6 +36,7 @@ a {
 a {
   position: relative;
   text-decoration: none;
+  color: $main-highlight;
 
   &.active {
     text-decoration: underline;
