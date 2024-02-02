@@ -42,10 +42,15 @@ const Projects = (): ReactElement => {
             >
               <Card variant="outlined">
                 <CardContent>
+                  <img
+                    className="repo-image"
+                    src="https://avatars.githubusercontent.com/u/32753670?v=4"
+                    alt="Repo depiction"
+                  />
                   <Typography sx={{ fontSize: 16 }} gutterBottom>
                     {repo.name}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography>
                     {repo.description ?? "No description"}
                   </Typography>
                   {repo.language ?? "N/A"}
