@@ -7,6 +7,7 @@
   align-items: center;
   min-height: 100vh;
   color: $main-text-light;
+  overflow-y: auto;
 }
 
 h1 {
@@ -55,6 +56,19 @@ a {
   }
 }
 
+.descriptive-text {
+  line-height: 1.5;
+}
+
+.home {
+  padding-top: 100px;
+  min-height: 400px;
+
+  .descriptive-text {
+    line-height: 2;
+  }
+}
+
 .main-section {
   height: 500px;
   display: flex;
@@ -67,8 +81,11 @@ a {
 .main-personal-photo {
   width: auto;
   height: 550px;
+  min-height: 550px;
+  width: auto;
   border-radius: 50%;
-  padding: 20px;
+  padding: 30px;
+  margin-top: 100px;
 }
 
 .about-content {
@@ -76,9 +93,20 @@ a {
   font-size: 1.18rem;
 }
 
+.project-section {
+  margin-top: 170px;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+
+  .MuiCircularProgress-root {
+    margin: auto !important;
+  }
+}
+
 .card-link {
   div {
-    min-height: 100px;
+    min-height: 230px;
     background-color: $secondary-dark;
     border: 2px solid transparent;
     transition: all 0.3s ease;
@@ -93,10 +121,55 @@ a {
   }
 }
 
-.repo-image {
-  width: 30px;
-  border-radius: 50%;
+.repo-card { 
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: red;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  h3 {
+    font-size: 1.25rem;
+    color: $main-text-light;
+  }
+
+  .description {
+    font-size: 1rem;
+    font-family: sans-serif !important;
+    color: $main-text-light-gray;
+    font-weight: 300;
+  }
+
+  .repo-image {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .language {
+    padding-top: 5px;
+    color: $secondary-highlight;
+    display: inline-flex;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid $main-light;
+    background-color: $purple;
+
+    &.javascript {
+      background-color: $green;
+    }
+    &.typescript {
+      background-color: $blue;
+    }
+    &.none {
+      background-color: $red;
+    }
+  }
 }
+
 
 footer {
   margin-top: auto;

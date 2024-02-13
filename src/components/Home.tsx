@@ -4,16 +4,15 @@ import me from "../meoutline.png";
 const Home = (): ReactElement => {
   return (
     <>
-      <div>
+      <div className="home">
         <h1 className="main-title">Hi!</h1>
         <h2 className="main-subtitle">
-          My name is Victoria Lang and I'm a senior software engineer and all
-          that shit
+          My name is Victoria Lang, and I'm a software engineer.
         </h2>
-        <span>
-          I like to do things. Lorem ipsum hell yeah brother! I also hate doing
-          things too. It's a tenuous balance Lorem ipsum hell yeah brother.
-          Lorem ipsum hell yeah brother Lorem ipsum hell yeah brother.
+        <span className="descriptive-text">
+          I'm a highly motivated Full Stack Software Developer with extensive
+          experience in developing and implementing web-based solutions using
+          C#, SQL, Typescript, JavaScript, and other languages.
         </span>
       </div>
       <img

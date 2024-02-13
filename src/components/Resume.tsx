@@ -11,8 +11,21 @@ const Resume = (): ReactElement => {
 
   return (
     <div>
-      <h2> Resume </h2>
-      <Button variant="outlined" onClick={downloadPdfResume} color="primary">
+      <h2>Resume</h2>
+      <Button
+        variant="outlined"
+        onClick={downloadPdfResume}
+        color="primary"
+        sx={{
+          backgroundColor: "#e07f2f",
+          color: "#f0f0f0",
+          "&:hover": {
+            backgroundColor: "#b96c2c",
+            border: "1px solid #b96c2c",
+          },
+          border: "1px solid #e07f2f",
+        }}
+      >
         Download my resume
       </Button>
     </div>

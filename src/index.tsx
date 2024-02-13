@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
-import DisableRippleTopNav from "./themes/DisableRippleTopNav";
+import GlobalTheme from "./themes/GlobalTheme";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={DisableRippleTopNav}>
+      <ThemeProvider theme={GlobalTheme}>
         <App />
       </ThemeProvider>
     </BrowserRouter>

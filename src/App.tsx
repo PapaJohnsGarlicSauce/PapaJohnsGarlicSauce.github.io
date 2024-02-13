@@ -20,7 +20,7 @@ function App() {
       {!isAppUnderConstruction && (
         <>
           <TopNav />
-          <div className="main-section">
+          <div className="main-section scrollable-content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
