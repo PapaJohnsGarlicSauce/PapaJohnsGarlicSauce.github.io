@@ -26,7 +26,7 @@ const Contact = (): ReactElement => {
         <div className="schedule-link">
           <MdEmail />
           <a
-            href="https://calendly.com/victoriamichelelang"
+            href="mailto:victoriamichelelang@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
