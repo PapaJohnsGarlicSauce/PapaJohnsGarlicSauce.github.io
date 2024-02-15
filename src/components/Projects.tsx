@@ -27,10 +27,10 @@ const Projects = (): ReactElement => {
   return (
     <div className="project-section">
       <h2>Projects</h2>
-      <p>
+      <p className="descriptive-text">
         Here are some selected projects on Github, mostly me messing around with
-        stuff and getting cofortable with different frameworks and paradigms. A
-        more detailed project outline can be found on my{" "}
+        stuff and getting comfortable with different frameworks and paradigms. A
+        more detailed outline of my experience can be found on my{" "}
         <Link to={"/resume"}> resume</Link>.
       </p>
       {isLoading && <CircularProgress />}
