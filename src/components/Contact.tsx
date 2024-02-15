@@ -9,6 +9,7 @@ const Contact = (): ReactElement => {
     <>
       <img
         src={contactMe}
+        className="contact-me-photo"
         alt="Author, Victoria Lang, standing in front of a brick wall"
       />
       <div className="contact-section">
@@ -25,11 +26,7 @@ const Contact = (): ReactElement => {
         </div>
         <div className="schedule-link">
           <MdEmail />
-          <a
-            href="mailto:victoriamichelelang@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="mailto:victoriamichelelang" target="_blank" rel="noreferrer">
             victoriamichelelang@gmail.com
           </a>
         </div>

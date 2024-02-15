@@ -39,6 +39,10 @@ a {
     font-family: unset;
     font-size: 1.5rem;
     font-weight: 200;
+
+    @media (max-width: 768px) {
+      font-size: 1.09rem;
+    }
   }
 
   a {
@@ -58,6 +62,17 @@ a {
       height: 10px;
       bottom: 0;
       transition: width 0.5s ease-in-out !important;
+    }
+  }
+
+
+  @media(max-width: 768px) {
+    margin-left: 0px;
+    background-color:$secondary-dark !important;
+    height: 65px;
+
+    .MuiBox-root {
+      display: flex !important;
     }
   }
 }
@@ -108,7 +123,6 @@ a {
   @media(max-width: 768px) {
     margin-top: 0;
     padding-top: 0;
-    width: auto;
     height: 300px;
     min-height: 300px;
   }
@@ -125,8 +139,17 @@ a {
     background-repeat: no-repeat;
     background-size: 800px auto;
     background-attachment: fixed; 
+
+    @media(max-width: 768px) {
+      background-image: none;
+    }
 }
 
+.contact-me-photo {
+  @media(max-width: 768px) {
+   margin-top: -100px;
+  }
+}
 .contact-section {
   min-width: 400px;
 
@@ -160,6 +183,17 @@ a {
 
   .MuiCircularProgress-root {
     margin: auto !important;
+  }
+
+  @media(max-width: 768px) {
+    margin-top: 0;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .MuiGrid-root {
+      padding-top: 10px;
+    }
   }
 }
 
